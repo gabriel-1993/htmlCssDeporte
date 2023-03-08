@@ -1,0 +1,149 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* contenedor general  */
+.divContenedor {
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom, #38302e, #212529);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+/* crossfit */
+h1 {
+  font-size: 50px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  color: yellow;
+}
+/* algunas tecnicas y... */
+h2 {
+  color: #fff;
+  letter-spacing: 2px;
+  font-weight: 400;
+  text-align: center;
+}
+h3 {
+  color: yellow;
+  width: 100%;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 30px;
+}
+
+/* contenedor de las tarjetas */
+.divTarjetas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 95%;
+}
+/* tarjetas en si x 5 */
+.tarjeta {
+  width: 240px;
+  height: 430px;
+  border: solid 1px yellow;
+  cursor: pointer;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  transition: transform 0.8s ease;
+}
+.tarjeta:hover {
+  transform: scale(1.02);
+}
+/* IMAGENES CARDS */
+.divImg {
+  width: 100%;
+  height: 60%;
+  background-image: url(./imagenes/front.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+.divTarjetas :nth-child(2) .divImg {
+  background-image: url(./imagenes/Burpee-box-jump.jpg);
+}
+
+.divTarjetas :nth-child(3) .divImg {
+  background-image: url(./imagenes/peso-muerto.png);
+}
+.divTarjetas :nth-child(4) .divImg {
+  background-image: url(./imagenes/snatch.webp);
+}
+.divTarjetas :nth-child(5) .divImg {
+  background-image: url(./imagenes/t2b.jpg);
+}
+.divTexto {
+  padding: 3px;
+  display: flex;
+  flex-direction: column;
+}
+
+p {
+  color: #fff;
+  padding: 8px;
+}
+
+/* propiedades luego de entrar a una de las tarjetas */
+
+.tarjIndividual {
+  width: min(750px, 95%);
+  min-height: 100vh;
+  border: solid 1px yellow;
+  cursor: pointer;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  margin-bottom: 20px;
+}
+.img1,
+.img2,
+.img3,
+.img4,
+.img5 {
+  width: min(750px, 100%);
+  height: 65vh;
+}
+/* IMAGENES AL CARGAR CARDS INDIVIDUALMENTE */
+.img1 {
+  background-image: url(./imagenes/front.jpg);
+  background-position: top;
+}
+.img2 {
+  background-image: url(./imagenes/Burpee-box-jump.jpg);
+}
+
+.img3 {
+  background-image: url(./imagenes/peso-muerto.png);
+}
+.img4 {
+  background-image: url(./imagenes/snatch.webp);
+}
+.img5 {
+  background-image: url(./imagenes/t2b.jpg);
+  background-position: top;
+}
+.divTextIndividual {
+  min-height: 35vh;
+  display: flex;
+  flex-direction: column;
+}
+.pIndividual {
+  margin-top: 18px;
+  font-size: 17px;
+  padding: 5px 15px;
+}
